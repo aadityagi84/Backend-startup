@@ -11,6 +11,6 @@ const mod = require("./Math");
 console.log(
   `this is another module:`,
   mod.mul(3, 5),
-  mod.math(3, 5),
-  mod.sub(4, 5)
+  mod.math(5, 5),
+  mod.sub(5, 5)
 );
