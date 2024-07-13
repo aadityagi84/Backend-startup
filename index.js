@@ -1,3 +1,4 @@
+
 // node js would be use for a server side rendering  , the core javascript would be worked in node js and the gui model of javsscript would not be worked inside the node js
 
 console.log(`this is node js and npm modules startup concept `);
@@ -11,6 +12,7 @@ const mod = require("./Math");
 console.log(
   `this is another module:`,
   mod.mul(3, 5),
-  mod.math(5, 5),
-  mod.sub(5, 5)
+  mod.math(3, 5),
+  mod.sub(4, 5)
 );
+>>>>>>> 1f2fb864d41722f966104dfb7bf7af98e0236463
