@@ -1,7 +1,7 @@
 <h3>here be creating a server using node js and clear some basic concept of routing using nodejs</h3>
 <h6>!!! here be also a feture to store the user req  of visiting the server </h6> and their be a some code 
 // this file and code will be use to create server using nodejs and store the value how many times will be  user visit your server and store their date and time also and set some basic routing
-
+<script>
 const http = require("http");
 const fs = require("fs");
 const server = http.createServer((req, res) => {
@@ -28,4 +28,4 @@ const port = 3000;
 server.listen(port, () => {
   console.log(`http://localhost:${port}`);
 });
-
+</script>
