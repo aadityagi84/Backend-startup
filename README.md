@@ -1,2 +1,2 @@
 # Backend-startup
-a fun test app for backend
+here be a some basic concepts and example based notes on nodejs, expressjs 
