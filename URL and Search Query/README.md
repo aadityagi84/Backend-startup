@@ -11,27 +11,27 @@ for using the url metthods firts of all you will create a index file and then, <
   here be a full file code <br><br><br>
   <p>
     // URl :::: Uniform Resource  Locator
-const http = require("http");
-const fs = require("fs");
+const http = require("http");<br>
+const fs = require("fs");<br>
 // here be a method  to user url inside the  search bar and using query and all of thinks
-const url = require("url");
-const Port = 8000;
-const server = http.createServer((req, res) => {
-  if (req.url === "/favicon.ico") return res.end();
-  const log = `${Date.now()}:${req.url} New request recived`;
-  // now we check the query parameter ,what is ,where he will be defiend,
+const url = require("url");<br>
+const Port = 8000;<br>
+const server = http.createServer((req, res) => {<br>
+  if (req.url === "/favicon.ico") return res.end();<br>
+  const log = `${Date.now()}:${req.url} New request recived`;<br>
+  // now we check the query parameter ,what is ,where he will be defiend,<br>
   // now we can see that pasre method gives us more types of functionality let we can pass them true in side the parse method
 
-  const myUrl = url.parse(req.url, true);
+  const myUrl = url.parse(req.url, true);<br>
   // after passing the true parameter inside the parse ethod restart the server and  we will check the
   // their will  gives query, and this query will be passed by the user like for example:::===about?myname=aadi&userid=1
-  console.log(myUrl);
-  fs.appendFile("urlinfo.txt", `${log}\n`, (err, data) => {
+  console.log(myUrl);<br>
+  fs.appendFile("urlinfo.txt", `${log}\n`, (err, data) => {<br>
     // to using in advance way the url method will be are we can write some keys  we can pass the myurl .pathname in the paramenter of basic routing are is that
 
-    switch (myUrl.pathname) {
+    switch (myUrl.pathname) {<br>
       case "/":
-        res.end("homepage ");
+        res.end("homepage ");<br>
         break;
       case "/about":
         const username = myUrl.query.myname;
@@ -52,7 +52,7 @@ const server = http.createServer((req, res) => {
 server.listen(Port, () => {
   console.log(`server is running on port http://localhost:${Port}`);
 });
-
+<br>
 // now install the url page using npm i url   --- the node modules will be install
 
   </p>
