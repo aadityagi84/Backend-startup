@@ -1,10 +1,10 @@
 for using the url metthods firts of all you will create a index file and then, <br>
-. type a commant npm init -y in terminal and write <br>
+. type a commant npm init -y in terminal and write <br><br><br><br>
  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index"
   },
-
+<br><br><br>
   <br>
   this lines in tha <pkg>.json file and then write some code <br>
   install the npm of url using the commant <b>npm i url </b> in terminal and <br>
