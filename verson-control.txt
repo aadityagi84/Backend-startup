@@ -1,0 +1,31 @@
+let asume  there will be your node module and what will be you use in their project like expressjs,mysql, and so on... 
+their will be has her own versions and the versions will be shown like ----------
+expressjs: 4.19.4 ....... something ,
+mysql: 2.18.1 ........ something etc-- now  let discuss about some basic conecpts of version control ,
+mtlb hume kise update krna chaye kise nhi krna chaye kise update kre se kuch hoga or kise update krne se kuch nhi hoga.
+
+
+let our version will be :^4.19.2,
+their will be 3 parts in version 
+
+
+======
+1. major version :4 :::
+
+
+
+
+==== major version will be those version in which if user do work on the oldes version it will not do update their version beacase this modification and updation of version will be do effect on your code , their  will be two posibilites of upgrading the major version will be code will be exectued or code will be not execute , beacuse let use will use 
+
+app.get(), method in your  older version , and now you will be update your older vwrsion into newr version thier will one cause will be the method will be change for example==  in new version their will be the new method wil, be app.GET :::: so your old code will be not be working so , do not update your major version 
+=========================================================================================================================================================================================================================================================================================================================================================================================================
+2. minor version :19 ::::===== recommended  Bug fix (security purpose )
+============================================================================================================================================================================================================================================================================================================================================================
+
+
+3. patch version :2 ===:::: optional
+
+
+======================================================================================================================================================================
+^ this sign will be show the campatable version means 
+agar ye kisi bhi version ke sath lga rhye ga toh ----jese  ===[^4.19.2,] to isne 4 ko lock kr diya or uske bad ke jitne bhi versin ate h sbko update krta rhye ga agar tum use update krne ko bolo ge toh like ^4.19.9,^4.19.2 and soo on but it will not be change 4 version ,and minor version also ,if u will be remove this campatable sign you npm will be do update your version 
