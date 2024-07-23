@@ -10,9 +10,4 @@ Middleware is a request handler that allows you to intercept and manipulate requ
 It is a flexible tool that helps in adding functionalities like logging, authentication, error handling, and more to Express applications.
 </p>
 
-<p>
-  <h6>What is Middleware in Express JS</h6>
-Middleware is a request handler that allows you to intercept and manipulate requests and responses before they reach route handlers. They are the functions that are invoked by the Express.js routing layer.
-
-It is a flexible tool that helps in adding functionalities like logging, authentication, error handling, and more to Express applications.
-</p>
+  
