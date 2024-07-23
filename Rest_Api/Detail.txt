@@ -1,0 +1,37 @@
+Restful api will be work on server and client architecture ;
+Restful api ke anadr me hum server par req send krte h jisme jo ki hume reposnd me kuch cheje return krti h 
+
+
+
+:::::::;test,json, html document, etc....
+
+
+now html ko hum kya bolte h api ke andar ise bolte h SSL mtlb server side rendering 
+
+===========================================>>>>>
+aab baat krte ki kinkb hume html send krna chaye or kb hume json send krna chaye ...
+
+
+!. agar tumhe pta h tumhara jo client h vo ik browser hi hone wala h , toh hum  html use kre ge jese google.com ko pta h ki , google .com ik browser pr hi open hota h ,, toh us cadse me hume humesa html hi send krna chaye, because html fast hota h koi processing ni krni pdti  , sidha screen pr data pass krta h ,
+
+
+~....=But agar tumhara cross-platform h , to us case me hum json use krte h beacuse ,we know the frontend team will able to handle  to display your data 
+~
+!. always respect http method  and these methods are - put, get ,post, patch, delete
+// get method ==read and display the data,
+// post method == create the data and user ,
+//put method==
+//patch method== update the data
+
+
+/////////////////////=====================//////////////////////
+NOW START THE WRITE UP CODE TO CREATE RESTFUL API 
+STEP 1: firts of all instal = npm init -y
+STEP 2: npm install express
+STEP3: now you have not any database or any ype of source of data son you can visit website for create fake data on json 
+STEP 4: Visit the website https://www.mockaroo.com/   this website create a fake data for testing purpose 
+
+
+// dynamic  routing ----------------
+
+get/api/user/:id ---- is way to show the ifd will be dynamic 
