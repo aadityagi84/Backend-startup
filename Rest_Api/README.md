@@ -10,4 +10,8 @@ Middleware is a request handler that allows you to intercept and manipulate requ
 It is a flexible tool that helps in adding functionalities like logging, authentication, error handling, and more to Express applications.
 </p>
 
+<p>Note: now discuss about some to takke fake data from herebe website link :  https://www.mockaroo.com/   </p>
+<p>
+  this website gives us a fake data acording to user to testing their skills 
+</p>
   
