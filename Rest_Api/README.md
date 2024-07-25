@@ -14,4 +14,6 @@ It is a flexible tool that helps in adding functionalities like logging, authent
 <p>
   this website gives us a fake data acording to user to testing their skills 
 </p>
+
+<span><h3>Middleware</h3></span> :::==is used for integrating the data when we use the api's like ,using POST ,PUT,PATCH and some more methods 
   
