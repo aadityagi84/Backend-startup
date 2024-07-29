@@ -195,6 +195,9 @@ Here's a good practice structure for your Express.js application:
 6    .Start the Server: Start the server and listen on a specific port.
 
 
+and their will be moe type of middleware installed in it
+
+
 
 
 
