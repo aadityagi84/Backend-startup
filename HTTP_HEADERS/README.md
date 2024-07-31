@@ -32,14 +32,14 @@ Server: Information about the server software. Example: Apache/2.4.1 (Unix).
 Set-Cookie: Set a cookie for the client. Example: Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2024 07:28:00 GMT.
 Content-Type: The MIME type of the returned content. Example: text/html; charset=UTF-8.
 Content-Length: The size of the response body in bytes.
-Location: Used in redirection or when a new resource has been created. Example: Location: http://www.example.com/new-resource.
+Location: Used in redirection or when a new resource has been created.
 <br><br>
 <h1>3. Entity Headers</h1>
 These provide information about the body of the resource, whether in the request or response.
 
 <p>Content-Encoding: The type of encoding used on the data. Example: gzip.
 Content-Language: The natural language or languages of the intended audience. Example: en-US.
-Content-Location: An alternate location for the returned data. Example: http://www.example.com/other-page.
+Content-Location: An alternate location for the returned data.
 Content-Disposition: Provides information about how to handle the content. Example: attachment; filename="filename.jpg".</p>
 <br><br>
 <h1>4. Security Headers</h1>
