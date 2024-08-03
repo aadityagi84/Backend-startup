@@ -54,3 +54,4 @@ Authentication: Headers like Authorization allow clients to provide credentials 
 Content Negotiation: Headers like Accept and Accept-Language enable clients to specify the preferred format and language of the response.
 Caching: Headers like Cache-Control and Expires are used to manage caching strategies.
 Security: Headers like Strict-Transport-Security and Content-Security-Policy help enforce security policies and prevent attacks like XSS (Cross-Site Scripting).</p>
+====
