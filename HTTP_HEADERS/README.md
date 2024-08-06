@@ -55,3 +55,4 @@ Content Negotiation: Headers like Accept and Accept-Language enable clients to s
 Caching: Headers like Cache-Control and Expires are used to manage caching strategies.
 Security: Headers like Strict-Transport-Security and Content-Security-Policy help enforce security policies and prevent attacks like XSS (Cross-Site Scripting).</p>
 ====
+now start reading about status code  in details 
