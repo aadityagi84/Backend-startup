@@ -31,3 +31,4 @@
 500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.<br>
 502 Bad Gateway: The server, while acting as a gateway or proxy, received an invalid response from the upstream server.<br>
 503 Service Unavailable: The server is currently unable to handle the request due to temporary overloading or maintenance.<br>
+<p> and here be a referance link to read about status codes in Node js <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">Click here !</a></p>
