@@ -46,6 +46,11 @@ In essence, MongoDB is a powerful database choice for applications that require 
 <br>
 <p>to create a entery in dtabase </p>
 <h2>db.databseName.insert({"":'",etc...})</h2>
+
 <p>
-  there are many problems to download the mongodb
+now start learning how to mongoose would be work first of all you will ::=>>
+1:define Schema : define the structure ;<br>
+<br>
+2: using schema creating a model ,<br>
+3:using the model we will do crud operation 
 </p>
