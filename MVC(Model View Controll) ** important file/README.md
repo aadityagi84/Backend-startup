@@ -14,8 +14,8 @@ Example: In a Node.js project using MongoDB, a User model might define a schema 
 Folder Structure:
 <br>
 bash
-Copy code
-/models
+Copy code<br>
+/models<br>
   └── userModel.js<br>
   └── productModel.js</p>
   <h2>
@@ -27,8 +27,8 @@ Why We Use:<br> Views allow for a clear separation between the user interface an
 Example: In an Express.js application, a views folder might contain EJS, Pug, or Handlebars templates that render the data passed from the controller.
 Folder Structure:<br>
 bash<br>
-Copy code
-/views
+Copy code<br>
+/views<br>
   └── index.ejs<br>
   └── userProfile.ejs</p>
   <h2>
@@ -39,8 +39,8 @@ Why We Use: <br>Controllers centralize the logic that processes user input and d
 Example: A userController.js might handle routes related to user operations like login, signup, and profile updates.
 Folder Structure:<br>
 bash
-Copy code
-/controllers
+Copy code<br>
+/controllers<br>
   └── userController.js<br>
   └── productController.js<p>
   <h2>
@@ -51,8 +51,8 @@ Why We Use: <br> Separating routes allows for cleaner and more maintainable code
 Example: A userRoutes.js file might define routes for user-related operations.
 Folder Structure:<br>
 bash
-Copy code
-/routes
+Copy code<br>
+/routes<br>
   └── userRoutes.js<br>
   └── productRoutes.js</p>
   <h2>
@@ -63,10 +63,10 @@ Example: You might store CSS files, JavaScript files, and images used in the app
 Folder Structure:<br>
 arduino
 Copy code<br>
-/public
-  └── css
-  └── js
-  └── images
+/public<br>
+  └── css<br>
+  └── js<br>
+  └── images<br>
   <h2>
 6. Config</h2>
 <p>
@@ -76,7 +76,7 @@ Example: A db.js file might configure the connection to a MongoDB database.
 Folder Structure:<br>
 arduino
 Copy code<br>
-/config
+/config<br>
   └── db.js<br>
   └── config.js</p>
   <h2>
@@ -88,8 +88,8 @@ Example: An authMiddleware.js might check if a user is authenticated before allo
 Folder Structure:
 bash
 Copy code
-/middleware
-  └── authMiddleware.js
+/middleware<br>
+  └── authMiddleware.js<br>
   └── logger.js</p>
   <h2>
 8. Server.js</h2>
@@ -97,8 +97,8 @@ Copy code
 Purpose:<br> The server.js file is the entry point of the application. It initializes the application, sets up middleware, connects to the database, and starts the server.<br>
 Why We Use: Having a single entry point ensures that the application is initialized in a consistent and controlled manner.<br>
 Example: The server.js might set up Express, connect to MongoDB, and define the port the server will listen on.<br>
-Folder Structure:
-Copy code
+Folder Structure:<br>
+Copy code<br>
 server.js</p>
 <p>
 Complete MVC Folder Structure
@@ -106,30 +106,30 @@ Here is how the entire folder structure might look in a Node.js project followin
 <br>
 bash
 Copy code<br>
-/project-root
-  ├── /config
-  │   └── db.js
-  ├── /controllers
-  │   └── userController.js
-  │   └── productController.js
-  ├── /middleware
-  │   └── authMiddleware.js
-  ├── /models
-  │   └── userModel.js
-  │   └── productModel.js
-  ├── /public
-  │   ├── /css
-  │   ├── /js
-  │   └── /images
-  ├── /routes
-  │   └── userRoutes.js
-  │   └── productRoutes.js
-  ├── /views
-  │   └── index.ejs
-  │   └── userProfile.ejs
+/project-root<br>
+  ├── /config<br>
+  │   └── db.js<br>
+  ├── /controllers<br>
+  │   └── userController.js<br>
+  │   └── productController.js<br>
+  ├── /middleware<br>
+  │   └── authMiddleware.js<br>
+  ├── /models<br>
+  │   └── userModel.js<br>
+  │   └── productModel.js<br>
+  ├── /public<br>
+  │   ├── /css<br>
+  │   ├── /js<br>
+  │   └── /images<br>
+  ├── /routes<br>
+  │   └── userRoutes.js<br>
+  │   └── productRoutes.js<br>
+  ├── /views<br>
+  │   └── index.ejs<br>
+  │   └── userProfile.ejs<br>
   └── server.js
-How to Create an MVC Folder Structure in Node.js
-Initialize a Node.js Project:
+How to Create an MVC Folder Structure in Node.js<br>
+Initialize a Node.js Project:<br>
 
 Run npm init to create a package.json file.<br>
 Install necessary dependencies like Express, Mongoose (if using MongoDB), and any template engine (e.g., EJS).<br>
@@ -142,7 +142,7 @@ In server.js, set up Express, connect to the database, and define the applicatio
 Define Models, Views, and Controllers:<br>
 
 Create and export models in the models folder.<br>
-Define controller functions in the controllers folder.
+Define controller functions in the controllers folder.<br>
 Create view templates in the views folder.<br>
 Set Up Routes:<br>
 
@@ -153,3 +153,4 @@ Start the server using node server.js or nodemon and access the application via 
 This structure ensures that your Node.js application is scalable, maintainable, and easy to understand.<br>
 
 </p>
+
