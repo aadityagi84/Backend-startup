@@ -154,3 +154,4 @@ This structure ensures that your Node.js application is scalable, maintainable, 
 
 </p>
 
+<p> after reading the all over data firstly read pkg.json file</p>
