@@ -17,5 +17,5 @@ Nodemon is a development tool that automatically restarts a Node.js application 
 Automatic Restarts: Monitors your project files and restarts the server whenever it detects changes.
 Easy Integration: Simple to install and use, typically with a command like nodemon app.js instead of node app.js.
 Customization: Allows configuration to specify which files or directories to watch, which extensions to watch, and other options through a nodemon.json file or command-line arguments.
-Compatibility: Works with any Node.js application and can be integrated with other tools and frameworks......
+Compatibility: Works with any Node.js application and can be integrated with other tools and frameworks........
 </p>
