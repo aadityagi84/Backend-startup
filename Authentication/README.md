@@ -426,7 +426,7 @@ console.log(`User created with ID: ${userId}`);
 </script>
 
 <p>
-Using UUIDs or other unique ID generators helps ensure that each record or entity in your application can be uniquely identified, which is crucial for data integrity and security.</p>
+Using UUIDs or other unique ID generators helps ensure that each record or entity in your application can be uniquely identified, which is crucial for data integrity and security.</p>c
 <p>
 
 You can include this content in your `README.md` file to provide clear documentation on how to use UUIDs in your Node.js project, as well as alternative packages and their implementations.
