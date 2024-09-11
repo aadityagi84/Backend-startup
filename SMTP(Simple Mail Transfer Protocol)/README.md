@@ -3,7 +3,7 @@
 ## Overview
 **SMTP (Simple Mail Transfer Protocol)** is an internet standard for email transmission. It is used by email servers to send, receive, and relay outgoing emails. This protocol allows communication between email clients (e.g., Gmail, Outlook) and email servers, ensuring email delivery across the internet.
 
----
+-----
 
 ## Email Flow Using SMTP
 
