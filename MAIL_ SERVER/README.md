@@ -163,37 +163,38 @@ _ Mail Exchanger: Defines which mail servers are responsible for receiving email
 
 - javascript
 - Copy code
-<script>
- const nodemailer = require('nodemailer');
+```javascript
+const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 // Create a transporter object
 const transporter = nodemailer.createTransport({
-host: 'smtp.example.com', // SMTP server address
-port: 587, // Using TLS
-secure: false, // Use true for port 465, false for 587
-auth: {
-user: process.env.SMTP_USER, // SMTP username
-pass: process.env.SMTP_PASS // SMTP password
-}
+    host: 'smtp.example.com', // SMTP server address
+    port: 587, // Using TLS
+    secure: false, // Use true for port 465, false for 587
+    auth: {
+        user: process.env.SMTP_USER, // SMTP username
+        pass: process.env.SMTP_PASS  // SMTP password
+    }
 });
 
 // Email data
 const mailOptions = {
-from: '"Sender Name" <sender@example.com>',
-to: 'recipient@example.com',
-subject: 'Test Email',
-text: 'Hello, this is a test email!',
-html: '<b>Hello, this is a test email!</b>'
+    from: '"Sender Name" <sender@example.com>',
+    to: 'recipient@example.com',
+    subject: 'Test Email',
+    text: 'Hello, this is a test email!',
+    html: '<b>Hello, this is a test email!</b>'
 };
 
 // Send the email
 transporter.sendMail(mailOptions, (error, info) => {
-if (error) {
-return console.log('Error occurred: ' + error.message);
-}
-console.log('Message sent: %s', info.messageId);
-});</script>
+    if (error) {
+        return console.log('Error occurred: ' + error.message);
+    }
+    console.log('Message sent: %s', info.messageId);
+});
+```
 - This code sets up an SMTP server connection using nodemailer to securely send an email. It uses environment variables for the SMTP user and password for better security.
 
 ### 8. SMTP Server Workflow
