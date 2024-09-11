@@ -163,7 +163,8 @@ _ Mail Exchanger: Defines which mail servers are responsible for receiving email
 
 - javascript
 - Copy code
-`` const nodemailer = require('nodemailer');
+<script>
+ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 // Create a transporter object
@@ -192,7 +193,7 @@ if (error) {
 return console.log('Error occurred: ' + error.message);
 }
 console.log('Message sent: %s', info.messageId);
-});``
+});</script>
 - This code sets up an SMTP server connection using nodemailer to securely send an email. It uses environment variables for the SMTP user and password for better security.
 
 ### 8. SMTP Server Workflow
