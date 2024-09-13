@@ -1,0 +1,18 @@
+{
+  "name": "smtp",
+  "version": "1.0.0",
+  "description": "- **Receiving Process**: The SMTP server listens on specific ports (25, 465, 587) to receive emails from other mail servers.\r - **MDA (Mail Delivery Agent)**: Once received, the email is passed to the Mail Delivery Agent, which stores the message in the user’s inbox.\r - **POP3/IMAP Protocols**:\r   - Users retrieve emails using either:\r     - **POP3** (Post Office Protocol): Better for offline storage.\r     - **IMAP** (Internet Message Access Protocol): Better for syncing emails across multiple devices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/smtp-server": "^3.5.10",
+    "nodemon": "^3.1.4",
+    "smtp-server": "^3.13.5"
+  }
+}
