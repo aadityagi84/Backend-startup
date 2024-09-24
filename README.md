@@ -41,3 +41,70 @@ Compatibility: Works with any Node.js application and can be integrated with oth
 - **Supports URL-encoded Forms:** Parses standard HTML form submissions.
 - **Handles Streaming:** Works with streams to parse data incrementally, avoiding loading the entire form into memory.
 - **Customizable:** You can set options like upload directory, max file size, and how fields are stored.
+  ### Common Use Case:
+- It’s primarily used when building APIs that need to handle forms with file uploads, such as profile picture uploads, document uploads, etc.
+
+- Basic Usage Example in Express:
+- Here’s how you can use formidable to handle file uploads:
+### npm install formidable
+-Set up Express with Formidable:
+``` const express = require("express");
+const formidable = require("formidable");
+const fs = require("fs");
+const path = require("path");
+
+const app = express();
+
+app.post("/upload", (req, res) => {
+  const form = new formidable.IncomingForm();
+  form.uploadDir = path.join(__dirname, "/uploads"); // Directory where files will be uploaded
+
+  form.parse(req, (err, fields, files) => {
+    if (err) {
+      return res.status(500).send("Error parsing form data");
+    }
+
+    // Move file to a permanent location
+    const oldPath = files.file.filepath;
+    const newPath = path.join(__dirname, "/uploads", files.file.originalFilename);
+
+    fs.rename(oldPath, newPath, (err) => {
+      if (err) {
+        return res.status(500).send("Error moving file");
+      }
+
+      res.status(200).send({
+        success: true,
+        message: "File uploaded successfully",
+        fields, // Form fields
+        file: files.file.originalFilename, // Uploaded file details
+      });
+    });
+  });
+});
+
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
+```
+- How It Works:
+### Incoming Form:
+
+- **formidable.IncomingForm()**
+-  creates an instance that will handle form data parsing.
+-The form.parse() method is used to parse the incoming request.
+Handling Fields and Files:
+
+- The fields object stores any regular form fields (e.g., text inputs).
+- The files object contains the file information (temporary path, file size, etc.).
+- **File Management:**
+
+-Files are uploaded to a temporary directory first. You can move them to a permanent directory using fs.rename().
+- **Common Options:**
+- **uploadDir:** Directory to store uploaded files temporarily.
+- **maxFileSize:** Maximum allowed file size (in bytes).
+- **keepExtensions:** Preserve file extensions.
+### When to Use formidable:
+- Handling multipart forms with file uploads.
+- Parsing form data with both text fields and file uploads.
+- Handling large file uploads efficiently without overloading the memory.
