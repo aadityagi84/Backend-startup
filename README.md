@@ -28,3 +28,16 @@ Compatibility: Works with any Node.js application and can be integrated with oth
 ### npm i cors
 
 - This module enables Cross-Origin Resource Sharing (CORS) for your backend server, allowing it to handle requests from different domains, such as when the frontend and backend are hosted on different ports. It prevents CORS-related errors by managing the sharing of resources between two applications running on separate ports, typically for a frontend and backend setup.
+
+
+- for Uploading the files on backend their will be many pkg
+ ###  npm i multer and ,
+ ### formidable 
+ - Is a Node.js module often used in Express applications to handle incoming form data, especially file uploads. It can parse form data sent through HTTP POST, including both multipart (file uploads) and URL-encoded forms.
+
+- Key Features of formidable:
+- **File Upload Handling:** It can handle large file uploads by parsing them in chunks, making it efficient for handling files.
+- **Supports Multipart/Form-Data:** Used for forms that include file uploads.
+- **Supports URL-encoded Forms:** Parses standard HTML form submissions.
+- **Handles Streaming:** Works with streams to parse data incrementally, avoiding loading the entire form into memory.
+- **Customizable:** You can set options like upload directory, max file size, and how fields are stored.
