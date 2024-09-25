@@ -32,7 +32,7 @@ Compatibility: Works with any Node.js application and can be integrated with oth
 
 - for Uploading the files on backend their will be many pkg
  ###  npm i multer and ,
- ### formidable 
+ ### express formidable 
  - Is a Node.js module often used in Express applications to handle incoming form data, especially file uploads. It can parse form data sent through HTTP POST, including both multipart (file uploads) and URL-encoded forms.
 
 - Key Features of formidable:
@@ -46,7 +46,7 @@ Compatibility: Works with any Node.js application and can be integrated with oth
 
 - Basic Usage Example in Express:
 - Here’s how you can use formidable to handle file uploads:
-### npm install formidable
+### npm install express-formidable
 -Set up Express with Formidable:
 ``` const express = require("express");
 const formidable = require("formidable");
