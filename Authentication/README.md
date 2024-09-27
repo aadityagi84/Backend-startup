@@ -338,8 +338,8 @@ npm install uuid
 ```
 
 <p> Here’s a basic example of how to use the uuid package in your code:</p>
-<script>
 
+```
 const { v4: uuidv4 } = require('uuid');
 
 // Generate a UUIDv4
@@ -363,7 +363,7 @@ A tiny, secure, URL-friendly, unique string ID generator. It’s smaller and fas
 // Generate a unique ID
 const uniqueId = nanoid();
 console.log('Generated ID:', uniqueId);
-</script>
+```
 
 <h2>Another alternative for generating collision-resistant unique IDs.</h2>
 <h2>cuid</h2>
