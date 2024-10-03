@@ -1,0 +1,11 @@
+
+const [cart, setCart] = useState([]);  // Array because the cart contains multiple products/items
+const [products, setProducts] = useState([]);  // Empty array to store multiple products
+const [user, setUser] = useState({});  // Object because it holds a single user with properties
+example:
+const [profile, setProfile] = useState({
+  name: '',
+  email: '',
+  age: null,
+});  // Object because the user has multiple properties
+
