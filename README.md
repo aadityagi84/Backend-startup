@@ -48,7 +48,8 @@ Compatibility: Works with any Node.js application and can be integrated with oth
 - Here’s how you can use formidable to handle file uploads:
 ### npm install express-formidable
 -Set up Express with Formidable:
-``` const express = require("express");
+```
+const express = require("express");
 const formidable = require("formidable");
 const fs = require("fs");
 const path = require("path");
@@ -108,3 +109,33 @@ Handling Fields and Files:
 - Handling multipart forms with file uploads.
 - Parsing form data with both text fields and file uploads.
 - Handling large file uploads efficiently without overloading the memory.
+
+-
+-
+-
+- ### When to use an Array ([]) in useState:
+- You use an array when your data is a list or collection of items.
+- Example: A list of products, users, tasks, or any collection of similar items.
+  ```
+   const [cart, setCart] = useState([]);  // Array because the cart contains multiple products/items
+
+- **Condition**: If you expect multiple items to be stored (like multiple products in a cart or multiple posts), use an array.
+- ### Operations: You will likely perform operations like .map(), .filter(), or .push() on arrays.
+  ### 2. When to use an Object ({}) in useState:
+ - You use an object when your data represents a single entity with multiple properties.
+- Example: A single user, form data, or a category.
+  ```
+  const [user, setUser] = useState({});  // Object because it holds a single user with properties 
+  ```
+  - **Condition**: If your data has multiple fields or properties (like a user with name, email, age, etc.), use an object.
+- **Operations**: You will likely update properties using object destructuring or ... (spread operator) to maintain immutability.
+- Use Case: If you're managing user profile data:
+ ```
+  const [profile, setProfile] = useState({
+  name: '',
+  email: '',
+  age: null,
+});  // Object because the user has multiple properties
+```
+
+
