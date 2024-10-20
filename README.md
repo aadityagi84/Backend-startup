@@ -1,3 +1,17 @@
+### npm i concurrently
+
+```  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "client": "npm run dev --prefix ./client",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+```
+### 
+
+- This module allows you to run multiple commands or servers concurrently with a single command. It's useful when you have both frontend and backend servers that need to be started simultaneously. By using concurrently, you can launch both with one command rather than running separate terminal windows for each server.
+
+
 # Backend-startup
 <p>here be a some basic concepts and example based notes on nodejs, expressjs </p>
 <p>
@@ -20,10 +34,7 @@ Customization: Allows configuration to specify which files or directories to wat
 Compatibility: Works with any Node.js application and can be integrated with other tools and frameworks.......::
 </p>
 
-### npm i concurrently
-### 
 
-- This module allows you to run multiple commands or servers concurrently with a single command. It's useful when you have both frontend and backend servers that need to be started simultaneously. By using concurrently, you can launch both with one command rather than running separate terminal windows for each server.
 
 ### npm i cors
 
